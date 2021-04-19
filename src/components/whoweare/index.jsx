@@ -6,7 +6,7 @@ const whoweare = () => {
     <header className="">
       <div className="hd">
         <div className="hd_content">
-          <h1 className="hd_content-h1">Nigeria</h1>
+          <h1 className="hd_content-h1"></h1>
         </div>
       </div>
     </header>

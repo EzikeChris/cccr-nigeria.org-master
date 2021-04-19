@@ -6,11 +6,45 @@
   width: 120px;
 }
 
-.list-items {
-  li {
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-    text-align: center;
-  }
+.list-items ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.active,
+.list-items ul li:hover {
+  background: #152e6bf6;
+  border-radius: 3px;
+}
+
+.sub-menu-1 {
+  display: none;
+  position: block;
+}
+.sub-menu-2 {
+  display: none;
+  position: block;
+}
+.dropdown-2 {
+  color: #fff;
+}
+.dropdown {
+  color: #fff;
+}
+
+.list-items ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: rgb(34, 36, 100);
+  margin-top: 5%;
+  margin-bottom: -10%;
+}
+
+.list-items ul li:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  background: rgb(34, 36, 100);
+  margin-top: 1%;
+  margin-bottom: -9%;
 }

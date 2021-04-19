@@ -26,7 +26,7 @@ const Nav = () => {
         </div>
         <div class="list-items" id="appside_main_menu">
           <ul class="navbar-nav h-100 d-flex justify-content-end align-items-center">
-            <li class="current-menu-item d-flex justify-content-center align-items-center">
+            <li class="active">
               <NavLink
                 exact
                 activeStyle={{
@@ -49,8 +49,48 @@ const Nav = () => {
               >
                 About
               </NavLink>
+              <div className="sub-menu-1">
+                <ul>
+                  <li className="dropdown">
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/about"
+                    >
+                      Mission
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/about"
+                    >
+                      Vision
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/about"
+                    >
+                      Leadership
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="d-flex justify-content-center align-items-center">
+            <li class="">
               <NavLink
                 exact
                 activeStyle={{
@@ -61,7 +101,48 @@ const Nav = () => {
               >
                 Project
               </NavLink>
+              <div className="sub-menu-2">
+                <ul>
+                  <li className="dropdown-2">
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/about"
+                    >
+                      Grants
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/about"
+                    >
+                      Trainings
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/about"
+                    >
+                      Events
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
             </li>
+
             <li class="d-flex justify-content-center align-items-center">
               <NavLink
                 exact
