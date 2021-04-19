@@ -1,0 +1,26 @@
+@import '../variables'
+
+
+#team
+  background-color: $subBgColor
+  .download-area-wrapper
+    background-color: $altSubBgColor  
+  button,
+  a.boxed-btn
+    background-image: -webkit-linear-gradient(50deg, $subBgColor 0%, $mainBgColor 100%)
+    border: 2px solid $white
+    border-color: $white
+    &:hover
+      background-image: -webkit-linear-gradient(50deg, $white 0%, $white 100%)
+      color: $text
+    &.blank
+      background-image: -webkit-linear-gradient(50deg, $white 0%, $white 100%)
+      border: 1px solid $subBgColor
+      &:hover
+        background-image: -webkit-linear-gradient(50deg, $subBgColor 0%, $mainBgColor 100%)
+        background-image: -webkit-linear-gradient(50deg, $subBgColor 0%, $mainBgColor 100%)
+        color: $white
+        border: 2px solid $white
+  .single-team-member      
+    .hover
+      background-color: $subBgColor

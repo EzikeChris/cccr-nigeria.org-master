@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #152e6bf6;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.list-items {
+  li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+}

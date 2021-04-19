@@ -1,0 +1,1229 @@
+@import '../variables'
+.modal-header
+  border: none  !important
+.modal.fade .modal-dialog
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0) !important
+
+
+.transfer-modal
+   &.modal
+    .modal-content
+      max-height: 635px
+      .modal-header
+        padding: 10px !important
+      #transfer-form-container  
+        min-height: 200px
+        max-height: 100%
+        overflow: hidden
+        overflow-y: auto 
+        .iti__flag-container
+          color: $header
+        input[type='tel']
+          width: 100%
+          padding: 5px 12px 
+          border: none
+          border-bottom: 1px solid $subHeader
+          &::placeholder
+            color: $subHeader
+        // .input-group
+        //   display: flex
+
+        #transfer-modal-input
+          margin: 0
+          input
+            width: 100%
+            border: 1px solid $secondary
+            padding: 5px 12px 
+
+        #transfer-modal-total    
+          margin: 0
+          width: 50%
+          input
+              width: 100%
+              border: none
+              padding: 5px 12px 
+              font-size: 10px 
+              line-height: 13px
+
+            
+
+
+.fund-wallet-option-modal,
+.receive-money-option-modal,
+.payment-request-option-modal,
+.transfer-options-modal,
+.pay-merchant-options-modal,
+.personal-transfer-options-modal
+  &.modal
+    cursor: pointer
+    .modal-header
+      display: none
+    .modal-content
+      background-color: transparent !important 
+      border: none
+.receive-money-option-modal
+  h3
+    text-align: center
+
+.topup-via-card-modal,
+.topup-via-account-modal
+  &.modal
+    .modal-header
+      padding: 10px !important
+    label
+      width: 100%
+    select
+      width: 100%
+    input#top-up-amount,
+    input#card-pin
+      border: none  !important
+      border-bottom: 1px solid $grey  !important
+      width: 100%
+
+
+
+.add-card-modal
+  &.modal
+    .modal-content
+      max-height: 550px
+      // padding-bottom: 32px
+      .modal-header
+        padding: 10px !important
+    #add-bank-card-container  
+        min-height: 400px
+        max-height: 100%
+        overflow-y: auto
+        margin-bottom: 32px
+        padding-bottom: 32px
+        .new-bank-card
+          min-height: 280px
+          h3
+            color: $white !important
+            span
+              color: $white !important
+
+        input[class*="-input"]        
+          border: none
+          background-color: $transparent
+          border-bottom: 1px solid $grey
+          width: 360px
+          &:focus
+            outline: none
+
+        input.month-input,
+        input.year-input  
+            width: 148px
+        .date-value-length
+          font-style: normal
+          font-weight: normal
+          font-size: 13px
+          line-height: 16px
+          letter-spacing: 0.35px
+          color: #757575
+          text-align: right
+
+        .what-is-cvv  
+          // z-index: 10
+          position: absolute
+          bottom: 0
+          right: -300px
+          width: 250px
+          height: 120px
+          span
+            cursor: pointer
+          h1,
+          h3
+            margin: 0
+            text-align: center
+          h1
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            letter-spacing: 0.35px
+            color: #000000  
+          h3    
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            color: #000000
+        div.button
+          min-height: 50px
+
+.add-account-modal          
+   &.modal
+    .modal-content
+      max-height: 550px
+      // padding-bottom: 32px
+      .modal-header
+        padding: 10px !important
+      #add-bank-account-container  
+        min-height: 400px
+        max-height: 100%
+        overflow-y: auto
+        margin-bottom: 32px
+        padding-bottom: 32px 
+        input[class*="-input"],
+        select        
+          border: none
+          background-color: $transparent
+          border-bottom: 1px solid $grey
+          width: 360px
+          border-radius: 0px
+          font-size: 16px
+          &:focus
+            outline: none
+        div.button
+          min-height: 50px    
+
+
+.bank-tranfer-modal          
+   &.modal
+    .modal-content
+      max-height: 550px
+      .modal-header
+        padding: 10px !important
+      #bank-transfer-container 
+        min-height: 400px
+        max-height: 100%
+        overflow-y: auto
+        margin-bottom: 32px
+        padding-bottom: 32px   
+        .title
+          font-style: normal
+          font-weight: normal
+          font-size: 13px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.35px
+          color: $subText
+        #account-info
+          .header
+            font-style: normal
+            font-weight: 600
+            font-size: 12px
+            line-height: 20px
+            text-align: center
+            letter-spacing: 0.35px
+            text-transform: uppercase
+            color: $header
+            margin: 0
+          .subheader
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 20px
+            letter-spacing: 0.35px
+            color: $darkOrange  
+            margin: 0
+          #copied-card
+            position: absolute
+            top: 20px
+            right: -60px
+            p.text-center
+             font-style: normal
+             font-weight: 600
+             font-size: 12px
+             line-height: 20px
+             text-align: center
+             letter-spacing: 0.35px
+             margin: 0 !important
+        .instructions
+          width: 100%
+          padding: 24px 40px
+          .instructions-text
+            font-style: normal
+            font-weight: 600
+            font-size: 13px
+            line-height: 20px
+            letter-spacing: 0.35px
+            color: $subTitle 
+          
+          ol
+            padding: 0 10px
+            color: $header
+            list-style-type: decimal
+            .instructions-text
+               margin: 0
+               margin-left: 5px
+               text-align: left
+             
+.request-money-modal
+   &.modal
+    .modal-header
+      padding: 10px !important
+    #request-payment-container
+      .iti__flag-container
+        color: $header
+      input,
+      textarea
+        width: 364px
+        height: 35px
+        background: #F6FBFF
+        border: .5px solid $secondary
+        border-radius: 4px 
+        padding: 24px   
+      textarea
+        height: 200px  
+        &.not-allowed
+          border: .5px solid $danger !important
+
+
+
+.request-money-qr-modal 
+   &.modal
+    .modal-content
+      max-height: 550px
+      .modal-header
+        padding: 10px !important
+      #qr-request-payment-container  
+        input
+          width: 364px
+          height: 35px
+          background: #F6FBFF
+          border: 1px solid #000000
+          border-radius: 4px 
+          padding: 24px
+
+.qr-modal            
+   &.modal
+    .modal-content
+      width: 300px
+      max-height: 550px
+      margin: 0 auto
+      .modal-header
+        display: none
+
+        
+.retrieve-money-modal
+   &.modal
+    .modal-content
+      max-height: 635px
+      .modal-header
+        padding: 10px !important
+      #retrieve-payment-container 
+        min-height: 200px
+        max-height: 100%
+        overflow: hidden
+        overflow-y: auto 
+        .iti__flag-container
+          color: $header
+        input[type='tel']
+          padding: 5px 12px 
+          border: none
+          border-bottom: 1px solid $subHeader
+          &::placeholder
+            color: $subHeader 
+        input
+          width: 415px
+          height: 35px
+          background: #F6FBFF
+          border: 1px solid #000000
+          border-radius: 4px 
+          padding: 24px
+        #retrieve-modal-input
+          margin: 0
+          input
+            width: 100%
+            border: 1px solid $secondary
+            padding: 5px 12px 
+        #retrieve-modal-total    
+          margin: 0
+          width: 35%
+          input
+            width: 100%
+            border: none
+            padding: 5px 12px 
+            font-size: 10px 
+            line-height: 13px    
+
+
+
+.password-modal          
+  &.modal
+    .modal-content
+      max-height: 100%
+      .modal-header
+        padding: 10px !important
+        display: none
+      #password-container
+        .input-group 
+          display: flex
+          justify-content: space-between
+          align-items: center
+          border-bottom: 2px solid $grey
+          padding: 0 10px
+          margin-bottom: 48px !important
+          width: 380px
+          label
+            margin: 0
+          div[class*="input-group-"] 
+            border: none 
+          input[class*="-input"]        
+            border: none
+            background-color: $transparent
+            width: 320px
+            &:focus
+              outline: none 
+      #cancel-button
+        &:hover
+          border-bottom: .5px solid $warning
+
+
+.settle-payment-modal
+   &.modal
+    .modal-content
+      max-height: 100%
+      .modal-header
+        padding: 10px !important
+      #settle-payment-modal
+        label
+          background: #F6FBFF  
+          border-radius: 4px 
+          padding: 10px
+          width: 415px
+          span
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+            color: $header
+          input
+            width: 100%
+            height: 35px
+            border: none
+            padding: 24px  
+            outline: none
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+            color: $header
+
+.available-bank-card-modal            
+    &.modal
+    .modal-content
+      max-height: 100%
+      .modal-header
+        padding: 10px !important
+      #available-bankcard-container
+        .title
+          font-style: normal
+          font-weight: 250
+          font-size: 20px
+          line-height: 24px
+          letter-spacing: 0.15px
+          color: $header 
+        .available-bank-card
+          font-style: normal
+          font-weight: 300
+          font-size: 14px
+          line-height: 17px
+          letter-spacing: 0.15px
+          color: $white
+          h3
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.15px
+            color: $white !important
+            span
+              font-style: normal
+              font-weight: 300
+              font-size: 14px
+              line-height: 17px
+              letter-spacing: 0.15px
+              color: $white 
+        .available-bankcards-slider
+          .slick-prev::before,
+          .slick-next::before
+             color: $warning
+          .available-bankcards-dots 
+            li
+              button::before
+                &:hover
+                color: $warning
+              &.slick-active     
+              button::before
+                color: $warning
+
+.inform-link-bvn-modal                
+   &.modal
+    .modal-content
+      max-height: 100%
+      .modal-header
+        padding: 10px !important
+      #inform-link-bvn-container
+        h1
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 24px
+          letter-spacing: 0.15px
+          color: $header 
+        .inform-link-bvn-button
+          font-style: normal
+          font-weight: 500
+          font-size: 16px
+          line-height: 19px
+          letter-spacing: 0.15px
+          color: $header 
+
+
+.link-bvn-modal                
+   &.modal
+    .modal-content
+      max-height: 100%
+      .modal-header
+        padding: 10px !important
+      #link-bvn-container 
+        position: relative 
+        label
+          margin-top: 0
+          margin-bottom: 32px
+          input[class*="-input"]
+            width: 432px
+            height: 56px
+            background: #F6FBFF
+            border: 1px solid #757575
+            box-sizing: border-box
+            border-radius: 4px 
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+        .why-bvn-text
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 20px
+          color: $yellow      
+          cursor: pointer
+        .why-bvn-card
+          position: absolute
+          bottom: 0px
+          right: -350px
+          i
+            color: $header
+            cursor: pointer
+          h1
+            font-family: Roboto
+            font-style: bold
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+            letter-spacing: 0.35px
+            color: $header
+            margin-bottom: 10px
+          h3 
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            color: $header 
+            margin: 0
+
+
+.verified-bank-card-modal  
+   &.modal
+    .modal-content
+      max-height: 550px !important
+      .modal-header
+        padding: 10px !important
+      #verified-bank-card-container
+        min-height: 400px
+        max-height: 100%
+        overflow-y: auto
+        i.mdi 
+          font-size: 20px
+        h3.my-cards
+            margin-left: 10px
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.15px
+            color: $header
+        #top
+          background-color: $white
+          height: 56px
+          padding: 12px 24px
+          margin-top: 8px
+          cursor: pointer
+          font-size: 16px
+          line-height: 19px
+          letter-spacing: 0.15px
+          h3
+            margin: 0
+            margin-left: 10px
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.15px
+            color: $header
+        .verified-bank-card
+          i.mdi-delete 
+            cursor: pointer
+          .bank
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            color: $header
+          .brand
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+            color: $header
+            opacity: 0.3  
+          .last4
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $header
+            opacity: 0.5  
+
+
+.verified-bank-account-modal  
+   &.modal
+    .modal-content
+      max-height: 550px !important
+      .modal-header
+        padding: 10px !important
+      #verified-bank-account-container
+        min-height: 400px
+        max-height: 100%
+        overflow-y: auto
+        i.mdi 
+          font-size: 20px
+        h3.my-bank-accounts
+            margin-left: 10px
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.15px
+            color: $header
+        #top
+          background-color: $white
+          height: 56px
+          padding: 12px 24px
+          margin-top: 8px
+          cursor: pointer
+          font-size: 16px
+          line-height: 19px
+          letter-spacing: 0.15px
+          h3
+            margin: 0
+            margin-left: 10px
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.15px
+            color: $header
+        .verified-bank-account
+          i.mdi-delete 
+            cursor: pointer
+          .bank-name
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            color: $header 
+          .last4
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $header
+            opacity: 0.5  
+
+
+.transactions-modal
+   &.modal
+    .modal-content
+      max-height: 100% !important
+      overflow: hidden
+      // background-color: #E5E5E5
+      .modal-header
+        padding: 10px !important
+        // background-color: #E5E5E5 
+      #transaction-container
+        .title
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 24px
+          letter-spacing: 0.15px
+          color: rgba(0, 0, 0, 0.87)
+          mix-blend-mode: normal
+          opacity: 0.87   
+
+.transaction-card-details-modal
+     &.modal
+      .modal-content
+        // max-height: 550px !important
+        .modal-header
+          padding: 10px !important
+        #transaction-card-details-container 
+          .header
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 24px
+            letter-spacing: 0.15px
+            color: #222222
+            mix-blend-mode: normal
+            opacity: 0.87
+          .title-description
+            font-style: normal
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            letter-spacing: 0.15px
+            color: #222222
+            mix-blend-mode: normal
+            opacity: 0.87  
+          .description
+            font-style: normal
+            font-weight: bold
+            font-size: 15px
+            line-height: 18px
+            letter-spacing: 0.15px
+            color: $header  
+          hr
+            border: 1px solid #9E9E9E
+            width: 100%
+          .first,
+          .second,
+          .third
+            width: 100%
+            height: 48px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: nowrap
+            div
+              width: 50%
+              height: 100%
+              &:nth-child(2)
+                text-align: right
+              span
+                font-style: normal
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                letter-spacing: 0.15px
+                color: #9E9E9E
+                mix-blend-mode: normal
+                opacity: 0.87    
+              p
+                font-style: normal
+                font-weight: bold
+                font-size: 15px
+                line-height: 18px
+                letter-spacing: 0.15px
+                color: #000000  
+                margin: 0
+              p.credit
+                color: $success
+                text-transform: uppercase
+              p.debit
+                color: $danger
+                text-transform: uppercase
+
+
+.payment-requests-modal
+   &.modal
+    .modal-content
+      max-height: 100% !important
+      overflow: hidden
+      // background-color: #E5E5E5
+      .modal-header
+        padding: 10px !important
+        // background-color: #E5E5E5 
+      #payment-requests-container
+
+        .title
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 24px
+          letter-spacing: 0.15px
+          color: rgba(0, 0, 0, 0.87)
+          mix-blend-mode: normal
+          opacity: 0.87  
+
+
+.request-payment-card-details-modal
+     &.modal
+      .modal-content
+        // max-height: 550px !important
+        .modal-header
+          padding: 10px !important
+          // display: none
+        #payment-request-card-details-container 
+          .header
+            font-style: normal
+            font-weight: 300
+            font-size: 20px
+            line-height: 24px
+            letter-spacing: 0.15px
+            color: #222222
+            mix-blend-mode: normal
+            opacity: 0.87  
+          .user-info    
+            .user-name    
+              font-style: normal
+              font-weight: 900
+              font-size: 14px
+              line-height: 17px
+              letter-spacing: 0.15px
+              color: $text
+          .payment-details    
+            .amount
+              font-style: normal
+              font-weight: bold
+              font-size: 14px
+              line-height: 17px
+              letter-spacing: 0.15px
+              color: $darkGreen
+            .payment-text
+              font-style: normal
+              font-weight: 500
+              font-size: 14px
+              line-height: 17px
+              letter-spacing: 0.15px
+              color: $text 
+            .payment-ref
+              font-style: normal
+              font-weight: 500
+              font-size: 14px
+              line-height: 17px
+              letter-spacing: 0.15px
+              color: #4CB050  
+            .payment-status--pending,
+            .payment-status--rejected
+              font-style: normal
+              font-weight: 900
+              font-size: 16px
+              line-height: 19px
+              letter-spacing: 0.15px
+              color: $darkYellow
+            .payment-status--rejected
+              color: $danger
+
+
+
+
+.withdrawal-modal          
+   &.modal
+    .modal-content
+      max-height: 640px
+      // padding-bottom: 32px
+      .modal-header
+        padding: 10px !important
+      #withdrawal-card-container  
+        min-height: 400px
+        max-height: 100%
+        overflow-y: auto
+        margin-bottom: 32px
+        padding-bottom: 32px 
+
+        input[class*="-input"],
+        select        
+          border: none
+          background-color: $transparent
+          border-bottom: 1px solid $grey
+          width: 360px
+          border-radius: 0px
+          &:focus
+            outline: none
+        .withdrawal-amount-wrapper 
+          width: 360px
+          #withdrawal-modal-amount
+            margin: 0
+            input
+              width: 85%
+              border: none
+              border-bottom: 1px solid $grey
+              padding: 5px 12px 
+
+          #withdrawal-modal-total    
+            margin: 0
+            input
+                width: 100%
+                border: none
+                padding: 5px 12px 
+                border: 1px solid $secondary
+        div.button
+            min-height: 50px    
+                      
+.commission-modal          
+   &.modal
+    .modal-content
+      max-height: 580px
+      .modal-header
+        padding: 10px !important
+      #commission-details-container
+        .header
+          color: $warning
+
+.available-billers-card-modal
+   &.modal
+    .modal-content
+      max-height: 550px !important
+      .modal-header
+        padding: 10px !important
+      #available-billers-card-container
+        min-height: 50px
+        max-height: 100%
+        overflow-y: auto
+        h3.my-billers
+            margin-left: 10px
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.15px
+        .available-biller-card
+          i.mdi-delete 
+            cursor: pointer
+          .biller
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            color: $header
+            text-transform: inherit
+
+
+
+
+.biller-options-modal            
+   &.modal
+    .modal-content
+      max-height: 550px !important
+      .modal-header
+        padding: 10px !important
+      #biller-options-card-container
+        min-height: 50px
+        max-height: 100%
+        overflow-y: auto
+        h3.my-billers
+            margin-left: 10px
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.15px
+        .biller-option-card
+          .paymentitemname
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            color: $header
+            text-transform: inherit
+
+
+
+.otp-card-modal            
+   &.modal
+    .modal-content
+      max-height: 550px !important
+      overflow: hidden
+      padding-bottom: 16px
+      .modal-header
+        padding: 10px !important
+      #otp-card-container
+        min-height: 50px
+        max-height: 100%
+        overflow-y: auto
+        label 
+          width: 100%
+           margin: 0 0 64px
+           padding: 0 0 64px
+          div 
+            width: 100%
+            margin: 0 auto 64px
+            text-align: center
+            span
+              font-style: normal
+              font-weight: 300
+              font-size: 16px
+              line-height: 19px
+              color: #000000
+                
+          .containerStyle 
+            width: 100%
+            margin-bottom: 0
+            div
+              flex-grow: 1
+              margin-bottom: 0
+              .inputStyle
+                height: 47px
+                width: 65px !important
+                font-size: 25px
+                text-align: center
+                color: $text
+                border: 1px solid $white
+                border-bottom: 1px solid $grey
+                &.focusStyle
+                  border-bottom: 1px solid $mediumWarning
+
+        .resend-otp
+          font-style: normal
+          font-weight: bold
+          font-size: 14px
+          line-height: 17px
+          color: $warning
+          cursor: pointer     
+          margin: 24px 0
+          &:hover
+            color: $mediumWarning
+
+        .go-back
+          bdi
+            color: $warning  
+            cursor: pointer
+            &:hover
+              color: $mediumWarning
+                  
+
+.add-bank-card-pin-modal                  
+   &.modal
+    .modal-content
+      max-height: 550px !important
+      overflow: hidden
+      padding-bottom: 16px
+      .modal-header
+        padding: 10px !important
+    #add-bank-card-pin-container  
+      input
+        width: 360px
+        height: 50px
+        padding: 5px 12px 
+        border: 1px solid $secondary
+        background: #F6FBFF
+
+
+
+.add-bank-card-otp-modal        
+   &.modal
+    .modal-content
+      max-height: 590px !important
+      overflow: hidden
+      padding-bottom: 16px
+      .modal-header
+        padding: 10px !important
+      #add-bank-card-otp-container
+          min-height: 50px
+          max-height: 100%
+          overflow: hidden
+          overflow-y: auto
+          label 
+            width: 100%
+            div 
+              width: 100%
+              margin: 0 auto 16px
+              text-align: center
+              span
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #757575
+                text-align: left
+            .containerStyle 
+              width: 100%
+              margin-bottom: 0
+              div
+                flex-grow: 1
+                margin-top: 16px
+                margin-bottom: 0
+
+                .inputStyle
+                  height: 56px
+                  width: 47px !important
+                  font-size: 25px
+                  text-align: center
+                  color: $text
+                  border: 1px solid $grey
+                  border-radius: 4px
+                .focusStyle
+                  border: 1px solid $mediumWarning
+          .resend-otp
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $warning
+            cursor: pointer     
+            margin: 24px 0
+            &:hover
+              color: $mediumWarning
+          div.button
+            min-height: 50px
+
+
+
+
+
+.verify-otp-modal        
+   &.modal
+    .modal-content
+      max-height: 590px !important
+      overflow: hidden
+      padding-bottom: 16px
+      .modal-header
+        padding: 10px !important
+      #verify-otp-container
+          min-height: 50px
+          max-height: 100%
+          overflow: hidden
+          overflow-y: auto
+          label 
+            width: 100%
+            div 
+              width: 100%
+              margin: 0 auto 16px
+              text-align: center
+              span
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #757575
+                text-align: left
+            .containerStyle 
+              width: 100%
+              margin-bottom: 0
+              div
+                flex-grow: 1
+                margin-bottom: 0
+                .inputStyle
+                  height: 56px
+                  width: 47px !important
+                  font-size: 25px
+                  text-align: center
+                  color: $text
+                  border: 1px solid $grey
+                  border-radius: 4px
+                .focusStyle
+                  border: 1px solid $mediumWarning               
+          .resend-otp
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $warning
+            cursor: pointer     
+            margin: 24px 0
+            &:hover
+              color: $mediumWarning
+          div.button
+            min-height: 50px
+
+
+
+.update-profile-modal
+     &.modal
+      .modal-content
+        max-height: 100% !important
+        overflow: hidden
+        padding-bottom: 16px
+        .modal-header
+          padding: 10px !important  
+        #update-profile-container
+          input
+            width: 432px
+            height: 56px
+            background: #F6FBFF
+            border: 1px solid #757575
+            box-sizing: border-box
+            border-radius: 4px 
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+            &:focus
+               border-radius: 1px 
+
+.allowed-withdrawal-bank-modal         
+   &.modal
+    .modal-content
+      max-height: 100% !important
+      overflow: hidden
+      padding-bottom: 16px
+      .modal-header
+        padding: 10px !important  
+        display: none
+      #allowed-withdrawal-bank-container    
+        .allowed-withdrawal-banks-wrapper   
+          min-height: 80px
+          max-height: 200px
+          overflow: hidden
+          overflow-y: auto
+          text-align: center
+          .banks
+            font-weight: 
+            
+
+
+.transfer-to-waya-user-modal
+  &.modal
+    .modal-content
+      max-height: 100% !important
+      overflow: hidden
+      padding-bottom: 16px   
+      .modal-header
+        padding: 10px !important  
+      #transfer-to-waya-user-container
+        .iti__flag-container
+          color: $header
+        input[type='tel']
+          width: 100%
+          padding: 5px 12px 
+          border: none
+          border-bottom: 1px solid $subHeader
+          &::placeholder
+            color: $subHeader
+        #transfer-modal-input
+          margin: 0
+          input
+            width: 100%
+            border: 1px solid $white
+            padding: 5px 12px 
+        #transfer-modal-total    
+          margin: 0
+          width: 65%
+          input
+            width: 100%
+            border: none
+            padding: 5px 12px 
+            padding-left: 48px
+            font-size: 10px 
+            line-height: 13px     
+
+
+.biller-payment-form-modal             
+  &.modal
+    .modal-content
+      max-height: 100% !important
+      overflow: hidden
+      padding-bottom: 16px   
+      .modal-header
+        padding: 10px !important 
+      #biller-payment-form-container  
