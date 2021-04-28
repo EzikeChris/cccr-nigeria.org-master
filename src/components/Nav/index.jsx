@@ -10,8 +10,8 @@ const Nav = () => {
     >
       <div class="container nav-container">
         <div class="responsive-mobile-menu">
-          <div class="logo-wrapper">
-            <a to="/" class="logo"></a>
+          <div class="cropped-logo">
+            {/* <img src="/images/cropped-logo.jpg" alt="cccrn logo" /> */}
           </div>
           <button
             class="navbar-toggler"
@@ -136,7 +136,7 @@ const Nav = () => {
                       }}
                       to="/about"
                     >
-                      Events
+                      Facilities
                     </NavLink>
                   </li>
                 </ul>
