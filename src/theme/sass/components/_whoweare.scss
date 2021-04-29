@@ -1,3 +1,6 @@
+.wh {
+  background-color: #152e6bf6;
+}
 .hd {
   width: 100%;
   min-height: 95vh;
@@ -6,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -23,10 +26,12 @@
 h1 {
   font-size: 50px;
   font-weight: 600;
+  color: #ffffff;
 }
+
 p {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 .ab2 {
@@ -34,4 +39,96 @@ p {
   margin: auto;
   text-align: center;
   padding-top: 100px;
+}
+
+.rw {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  font-size: large;
+  text-align: center;
+  flex-basis: 31%;
+  background: #282d5f;
+  color: #ffffff;
+  border-radius: 60px;
+  margin-bottom: 5%;
+  padding: 50px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.course-col:hover {
+  background-color: #212fc7;
+  color: #282d5f;
+}
+
+@media (max-width: 700px) {
+  .rw {
+    flex-direction: column;
+  }
+}
+.on {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.lc {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.facility-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.facility-col img {
+  width: 100%;
+  display: block;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(11, 82, 175, 0.411);
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
 }

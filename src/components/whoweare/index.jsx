@@ -3,10 +3,10 @@ import "../../theme/sass/components/_whoweare.scss";
 
 const whoweare = () => {
   return (
-    <header>
+    <header className="wh">
       <div className="hd"></div>
       <div className="ab">
-        <h1>Center for Clinical Care and Clinical Research Nigeria</h1>
+        <h1>Center for Clinical Care and Clinical Research</h1>
         <p>
           The Center for Clinical Care and Clinical Research is an indigenous,
           non-profit organization that promotes best practices in health systems
@@ -27,7 +27,7 @@ const whoweare = () => {
         </p>
       </div>
       <div className="ab2">
-        <h1> Geographic Reach and Experience in Nigeria</h1>
+        <h1> Geographical Reach and Experience in Nigeria</h1>
         <p>
           CCCRN has extensive footprints across the entire Nigerian geo-polity.
           We have worked in 36 states of the federation and our work spans
@@ -37,55 +37,59 @@ const whoweare = () => {
           or vulnerable communities, such as nomadic populations and persons in
           conflict zones of Northeastern Nigeria.{" "}
         </p>
-        <div className="row">
+        <div className="rw">
           <div className="course-col">
-            <h3>North-Central(Middle Belt)</h3>
-            <p>
-              Abuja-In service training Surveillance(SERS),KwaraState-TB
-              prevention and treatment(RITT) and Surviellance(SERS),Benue
-              State-In service Training(PMET) Implementation Research(I-STAR)
-              HIV Care and Treatment (iCARES)Impact Evaluation(I-TIE)
-              Surveillance(SERS),Kogi Stata-Surveillance(SERS),Nasarawa State-In
-              service Training(PMET) Surveillance(SERS),Niger
-              State-Surveillance(SERS)TB-Prevention and Treatment (RITT),Plateau
-              State-HIV Care and Treatment(CHARIS)Surveillance (SERS)
-            </p>
-          </div>
-          <div className="course-col">
-            <h3>North-West</h3>
+            <h3>Middle Belt</h3>
+
             <p></p>
           </div>
           <div className="course-col">
-            <h3>North-East</h3>
-            <p>
-              Abuja(Federal Capital Territory)-In service training and
-              Surveillance(SERS), Kwara State-TB prevention and treatment(RITT)
-              and Surviellance(SERS).
-            </p>
+            <h3>North West</h3>
+            <p></p>
           </div>
           <div className="course-col">
-            <h3>South-South</h3>
-            <p>
-              Abuja(Federal Capital Territory)-In service training and
-              Surveillance(SERS), Kwara State-TB prevention and treatment(RITT)
-              and Surviellance(SERS).
-            </p>
+            <h3>North East</h3>
+            <p></p>
           </div>
           <div className="course-col">
-            <h3>South-East</h3>
-            <p>
-              Abuja(Federal Capital Territory)-In service training and
-              Surveillance(SERS), Kwara State-TB prevention and treatment(RITT)
-              and Surviellance(SERS).
-            </p>
+            <h3>South South</h3>
+            <p></p>
           </div>
           <div className="course-col">
-            <h3>South-West</h3>
-            <p>
-              Abuja(Federal Capital Territory)-In service training and
-              Surveillance(SERS), Kwara State-TB prevention and treatment(RITT)
-              and Surviellance(SERS).
-            </p>
+            <h3>South East</h3>
+            <p></p>
+          </div>
+          <div className="course-col">
+            <h3>South West</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div className="lc">
+        <h1 className="on">Operational Facilities</h1>
+        <p>
+          CCCRN has strengthened Operational and Facility structures to
+          implement standardized testing protocols for HIV testing and
+          counseling.{" "}
+        </p>
+        <div className="rw">
+          <div className="facility-col">
+            <img src="images/headoffice.jpeg" alt="" />
+            <div className="layer">
+              <h3>ABUJA</h3>
+            </div>
+          </div>
+          <div className="facility-col">
+            <img src="images/headoffice.jpeg" alt="" />
+            <div className="layer">
+              <h3>Benue</h3>
+            </div>
+          </div>
+          <div className="facility-col">
+            <img src="images/headoffice.jpeg" alt="" />
+            <div className="layer">
+              <h3>Calabar</h3>
+            </div>
           </div>
         </div>
       </div>
