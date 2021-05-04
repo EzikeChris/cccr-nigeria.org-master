@@ -26,7 +26,7 @@ const Index = () => {
             <div
               className="right d-flex flex-column justify-content-center align-items-center  h-100 w-100"
               style={{
-                backgroundImage: `linear-gradient(to bottom left, #001060, #0A2A7A23), url(${require("../../theme/assets/images/website-banner.jpg")})`,
+                backgroundImage: `linear-gradient(to bottom left, #001060, #0A2A7A23), url(${require("../../theme/assets/images/website-banner.png")})`,
               }}
             >
               <h2 className="header my-auto">Improved Approach</h2>

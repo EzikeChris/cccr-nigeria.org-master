@@ -93,7 +93,7 @@ const whoweare = () => {
           </div>
         </div>
         <div className="fc">
-          <h1>Facilities & Research Capacity</h1>
+          <h1>Health Care & Research Capacity</h1>
           <p>
             CCCRN has implemented clinical and operational research activities
             funded through CDC, NIH, Clinton Health Access Initiatives, GEANCO
@@ -111,7 +111,7 @@ const whoweare = () => {
           </p>
           <div className="rw">
             <div className="facilities-col">
-              <img src="images/Image13.jpg" alt="facilities" />
+              <img src="images/disease.png" alt="facilities" />
               <h3>Disease Surveillance and Notification</h3>
               <p>
                 {" "}
@@ -124,7 +124,7 @@ const whoweare = () => {
               </p>
             </div>
             <div className="facilities-col">
-              <img src="images/Image15.jpg" alt="facilities" />
+              <img src="images/health.jpeg" alt="facilities" />
               <h3> Service Delivery and Treatment</h3>
               <p>
                 From 2010 till date, CCCRN has implemented large comprehensive
@@ -136,7 +136,7 @@ const whoweare = () => {
               </p>
             </div>
             <div className="facilities-col">
-              <img src="images/Image10.jpg" alt="facilities" />
+              <img src="images/health.jpg" alt="facilities" />
               <h3>Health Information Systems</h3>
               <p>
                 Through our capacity building and Technological infrastructure,
@@ -154,11 +154,7 @@ const whoweare = () => {
               <div className="testimonial-col">
                 <img src="images/cdc.jpg" alt="cdc logo" />
                 <div className="">
-                  <p>
-                    Through our partnership, cccrn continues to expand its core
-                    competencies to be a leading organization for health care
-                    solution in Nigeria.
-                  </p>
+                  <p></p>
                   <h3>CDC</h3>
                   <i className="fa fa-star"></i>
                   <i className="fa fa-star"></i>
@@ -170,11 +166,7 @@ const whoweare = () => {
               <div className="testimonial-col">
                 <img src="images/usaid2.jpg" alt="usaid logo" />
                 <div className="">
-                  <p>
-                    Through our partnership, cccrn continues to expand its core
-                    competencies to be a leading organization for health care
-                    solution in Nigeria.
-                  </p>
+                  <p></p>
                   <h3>USAID</h3>
                   <i className="fa fa-star"></i>
                   <i className="fa fa-star"></i>
@@ -186,12 +178,19 @@ const whoweare = () => {
               <div className="testimonial-col">
                 <img src="images/ncdc.jpg" alt="ncdc logo" />
                 <div className="">
-                  <p>
-                    Through our partnership, cccrn continues to expand its core
-                    competencies to be a leading organization for health care
-                    solution in Nigeria.
-                  </p>
+                  <p></p>
                   <h3>NCDC</h3>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star-half"></i>
+                </div>
+              </div>
+              <div className="testimonial-col">
+                <img src="" alt="" />
+                <div className="">
+                  <h3>NACA</h3>
                   <i className="fa fa-star"></i>
                   <i className="fa fa-star"></i>
                   <i className="fa fa-star"></i>

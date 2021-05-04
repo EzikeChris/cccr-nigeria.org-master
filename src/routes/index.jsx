@@ -7,6 +7,7 @@ import Partners from '../pages/Partners'
 import Stories from '../pages/Stories'
 import Gallery from '../pages/Gallery'
 import ContactUs from '../pages/ContactUs'
+import Mission from '../pages/Mission'
 
 export default () => (
   <Switch>
@@ -17,5 +18,7 @@ export default () => (
     <Route exact path="/stories" component={Stories} />
     <Route exact path="/Gallery" component={Gallery} />
     <Route exact path="/ContactUs" component={ContactUs}/>
+    <Route exact path="/Mission" component={Mission}/>
+
   </Switch>
 )

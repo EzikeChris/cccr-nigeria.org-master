@@ -58,7 +58,7 @@ const Nav = () => {
                         fontWeight: "bold",
                         color: "white",
                       }}
-                      to="/about"
+                      to="/mission"
                     >
                       Mission
                     </NavLink>

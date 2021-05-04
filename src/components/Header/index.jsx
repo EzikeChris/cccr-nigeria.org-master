@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../../theme/sass/components/header.sass";
 
 const Header = () => {
@@ -41,9 +42,18 @@ const Header = () => {
                 models of health systems strengthening.
               </p>
               <div class="btn-wrapper wow fadeInUp">
-                <a href="#" class="boxed-btn btn-rounded">
-                  Mission
-                </a>
+                <div class="boxed-btn btn-rounded">
+                  <NavLink
+                    exact
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "white",
+                    }}
+                    to="/mission"
+                  >
+                    Mission
+                  </NavLink>
+                </div>
                 <a href="#" class="boxed-btn btn-rounded blank">
                   Vision
                 </a>
