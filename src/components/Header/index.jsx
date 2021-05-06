@@ -54,9 +54,18 @@ const Header = () => {
                     Mission
                   </NavLink>
                 </div>
-                <a href="#" class="boxed-btn btn-rounded blank">
-                  Vision
-                </a>
+                <div href="#" class="boxed-btn btn-rounded blank">
+                  <NavLink
+                    exact
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "white",
+                    }}
+                    to="/vision"
+                  >
+                    Vision
+                  </NavLink>
+                </div>
               </div>
             </div>
           </div>

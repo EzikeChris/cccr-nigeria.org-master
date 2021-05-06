@@ -1,7 +1,7 @@
 import React from "react";
-import "../../theme/sass/components/mission.scss";
+import "../../theme/sass/components/vision.scss";
 
-const mission = () => {
+const vision = () => {
   return (
     <div className="cn">
       <div className="cn-row">
@@ -15,9 +15,9 @@ const mission = () => {
             Center for Clinical Care and Clinical Research- MISSION STATEMENT
           </h1>
           <p>
-            Our mission is to promote best practices in health care delivery and
-            research using locally-adapted models of health systems
-            strengthening.
+            Our guiding philosophy is to provide best possible care solutions
+            for each client, magnifying same approach to reach many more in
+            reaching public health goals.
           </p>
           <div className="in">
             <span className="ac"></span>
@@ -187,4 +187,4 @@ const mission = () => {
   );
 };
 
-export default mission;
+export default vision;

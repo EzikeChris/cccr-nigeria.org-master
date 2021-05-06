@@ -70,7 +70,7 @@ const Nav = () => {
                         fontWeight: "bold",
                         color: "white",
                       }}
-                      to="/about"
+                      to="/vision"
                     >
                       Vision
                     </NavLink>

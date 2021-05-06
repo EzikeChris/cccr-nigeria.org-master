@@ -137,7 +137,7 @@ const whoweare = () => {
             </div>
             <div className="facilities-col">
               <img src="images/health.jpg" alt="facilities" />
-              <h3>Health Information Systems</h3>
+              <h3>Health Information Systems Managment</h3>
               <p>
                 Through our capacity building and Technological infrastructure,
                 CCCRN has established a web based platforms to provide virtual

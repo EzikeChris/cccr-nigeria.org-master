@@ -11,7 +11,7 @@ import People from "../components/People";
 import Footer from "../components/Footer";
 import WhoWeAre from "../components/whoweare";
 import Mission from "../components/Mission";
-
+import Vision from "../components/Vision";
 export {
   Nav,
   Header,
@@ -26,4 +26,5 @@ export {
   Footer,
   WhoWeAre,
   Mission,
+  Vision,
 };
