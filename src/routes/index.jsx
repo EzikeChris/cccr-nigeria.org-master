@@ -9,6 +9,7 @@ import Gallery from "../pages/Gallery";
 import ContactUs from "../pages/ContactUs";
 import Mission from "../pages/Mission";
 import Vision from "../pages/Vision";
+import Leadership from "../pages/Leadership";
 
 export default () => (
   <Switch>
@@ -21,5 +22,6 @@ export default () => (
     <Route exact path="/ContactUs" component={ContactUs} />
     <Route exact path="/Mission" component={Mission} />
     <Route exact path="/Vision" component={Vision} />
+    <Route exact path="/Leadership" component={Leadership} />
   </Switch>
 );

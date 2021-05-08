@@ -15,7 +15,7 @@ const vision = () => {
             Center for Clinical Care and Clinical Research- MISSION STATEMENT
           </h1>
           <p>
-            Our guiding philosophy is to provide best possible care solutions
+            Our vision is to provide best possible care solutions
             for each client, magnifying same approach to reach many more in
             reaching public health goals.
           </p>

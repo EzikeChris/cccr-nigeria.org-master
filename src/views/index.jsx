@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 import WhoWeAre from "../components/whoweare";
 import Mission from "../components/Mission";
 import Vision from "../components/Vision";
+import Leadership from "../components/Leadership";
 export {
   Nav,
   Header,
@@ -27,4 +28,5 @@ export {
   WhoWeAre,
   Mission,
   Vision,
+  Leadership,
 };

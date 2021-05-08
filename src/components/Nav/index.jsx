@@ -60,7 +60,20 @@ const Nav = () => {
                       }}
                       to="/mission"
                     >
-                      Mission
+                      Team
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink
+                      exact
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                      to="/leadership"
+                    >
+                      Board
                     </NavLink>
                   </li>
                   <li>
@@ -72,19 +85,7 @@ const Nav = () => {
                       }}
                       to="/vision"
                     >
-                      Vision
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      exact
-                      activeStyle={{
-                        fontWeight: "bold",
-                        color: "white",
-                      }}
-                      to="/about"
-                    >
-                      Leadership
+                      Careers
                     </NavLink>
                   </li>
                 </ul>
