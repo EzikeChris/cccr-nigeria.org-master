@@ -58,7 +58,7 @@ const Nav = () => {
                         fontWeight: "bold",
                         color: "white",
                       }}
-                      to="/mission"
+                      to="/team"
                     >
                       Team
                     </NavLink>
@@ -98,7 +98,7 @@ const Nav = () => {
                   fontWeight: "bold",
                   color: "white",
                 }}
-                to="/projects"
+                to="/project"
               >
                 Project
               </NavLink>
@@ -144,18 +144,18 @@ const Nav = () => {
               </div>
             </li>
 
-            <li class="d-flex justify-content-center align-items-center">
+            {/* <li class="d-flex justify-content-center align-items-center">
               <NavLink
                 exact
                 activeStyle={{
                   fontWeight: "bold",
                   color: "white",
                 }}
-                to="/contact"
+                to="/partnership"
               >
                 Partnership
               </NavLink>
-            </li>
+            </li> */}
             <li class="d-flex justify-content-center align-items-center">
               <NavLink
                 exact
@@ -163,7 +163,7 @@ const Nav = () => {
                   fontWeight: "bold",
                   color: "white",
                 }}
-                to="/contact"
+                to="/training"
               >
                 Training
               </NavLink>
@@ -175,7 +175,7 @@ const Nav = () => {
                   fontWeight: "bold",
                   color: "white",
                 }}
-                to="/contact"
+                to="/gallery"
               >
                 Gallery
               </NavLink>

@@ -1,0 +1,83 @@
+.servicas {
+  font-family: sans-serif;
+}
+.ho {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 100px;
+  text-align: center;
+  background: #061847f6;
+}
+
+.servicas {
+  padding: 80px 0;
+}
+
+.servicas .set-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 150px;
+  text-align: center;
+}
+
+.set-one > div {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 25px;
+}
+.service-1 {
+  padding: 25px 15px;
+}
+
+.service-1:hover {
+  -webkit-box-shadow: -1px 1px 5px 6px rgba(24, 157, 228, 1);
+  -moz-box-shadow: -1px 1px 5px 6px rgba(34, 157, 228, 1);
+  box-shadow: -1px 1px 5px 6px rgba(34, 157, 228, 1);
+  transition: 0.5s;
+}
+
+.service-1 h3 {
+  margin: auto;
+  font-weight: 100;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.service-1 h3::after {
+  content: "";
+  width: 20%;
+  height: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .service-1 h3 {
+    font-size: 1em;
+  }
+  .service-1 img {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .servicas .set-one {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-tittle img {
+    font-size: 2.7em;
+  }
+  .service-1 img {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .servicas .set-one {
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+  }
+  .services-tittle h3 {
+    font-size: 2em;
+  }
+}

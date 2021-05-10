@@ -13,6 +13,12 @@ import WhoWeAre from "../components/whoweare";
 import Mission from "../components/Mission";
 import Vision from "../components/Vision";
 import Leadership from "../components/Leadership";
+import Team from "../components/Team";
+import Partnership from "../components/Partnership";
+import Training from "../components/Training";
+import Project from "../components/Project";
+import Gallery from "../components/Gallery";
+import Contact from "../components/Contact";
 export {
   Nav,
   Header,
@@ -29,4 +35,10 @@ export {
   Mission,
   Vision,
   Leadership,
+  Team,
+  Partnership,
+  Training,
+  Project,
+  Gallery,
+  Contact,
 };

@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Gallery } from "../../views";
 
 const index = () => {
-  return <div></div>
-}
+  return (
+    <>
+      <Gallery />
+    </>
+  );
+};
 
-export default index
+export default index;

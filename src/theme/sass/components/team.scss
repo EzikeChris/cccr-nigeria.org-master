@@ -1,0 +1,69 @@
+.tb {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 200px;
+  text-align: center;
+  background: #0f245cf6;
+  font-family: sans-serif;
+}
+
+.profile-box {
+  width: 240px;
+  height: 240px;
+  background: #0f245cf6;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 10px 10px rgb(0, 0, 0);
+  padding: 20px;
+  position: relative;
+  text-align: left;
+  transition: background 0.5s;
+}
+
+.profile-box h4 {
+  margin-top: 100px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.profile-box small {
+  text-align: center;
+  color: #fff;
+}
+.profile-box img {
+  width: 90px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.social-box {
+  margin: 60px auto 20px;
+  text-align: center;
+  background: #0f245cf6;
+  border-radius: 3px;
+}
+
+.social-box .fa {
+  margin: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.profile-box img:hover {
+  width: 240px;
+}
+
+.profile-box:hover {
+  background: #1440b8f6;
+}

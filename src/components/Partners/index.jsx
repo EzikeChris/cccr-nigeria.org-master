@@ -2,19 +2,19 @@ import React from "react";
 import "../../theme/sass/components/partners.sass";
 const Index = (props) => {
   const partners = props.partners.map((partner) => (
-    <div key={partner.id} className='col-sm-3 col-md-2 col-lg-2 my-2 mx-3'>
-      <img className='partner-logo' src={partner.url} alt='partner-logo' />
+    <div key={partner.id} className="col-sm-3 col-md-2 col-lg-2 my-2 mx-3">
+      <img className="partner-logo" src={partner.url} alt="partner-logo" />
     </div>
   ));
   return (
-    <section id='partners' className='partners p-4'>
-      <h1 className='title text-center'>Backed By The Best</h1>
-      <p className='sub-title text-center'>
+    <section id="partners" className="partners p-4">
+      <h1 className="title text-center">Backed By The Best</h1>
+      <p className="sub-title text-center">
         Generating more meaningful and lasting impact is made possible <br />{" "}
         through the support of our partners.
       </p>
-      <div className='container-fluid p-4'>
-        <div className='row justify-content-start align-items-center'>
+      <div className="container-fluid p-4">
+        <div className="row justify-content-start align-items-center">
           {partners}
         </div>
       </div>
